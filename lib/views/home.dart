@@ -52,7 +52,7 @@ class HomeState extends State<Home> {
             actions: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.search, color: Colors.white,),
+                icon: const Icon(Icons.search, color: Colors.white,),
               ),
               IconButton(
                 onPressed: () async {
@@ -70,11 +70,11 @@ class HomeState extends State<Home> {
                 padding: const EdgeInsets.only(right: 8.0),
                 child: PopupMenuButton(
                   itemBuilder: (context) => [
-                    PopupMenuItem(
+                    const PopupMenuItem(
                       child: Row(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8.0),
+                            padding: EdgeInsets.only(right: 8.0),
                             child: Icon(Icons.settings),
                           ),
                           Text("Setting"),
@@ -82,7 +82,7 @@ class HomeState extends State<Home> {
                       ),
                     )
                   ],
-                  child: Icon(Icons.more_vert_rounded, color: Colors.white,),
+                  child: const Icon(Icons.more_vert_rounded, color: Colors.white,),
                 ),
               )
             ]),
